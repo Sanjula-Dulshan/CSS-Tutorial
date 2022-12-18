@@ -1,0 +1,9 @@
+/*Basic Styling*/
+.container > div {
+  background: rgb(224, 7, 224);
+  padding: 10px;
+}
+
+.container > div:nth-child(odd) {
+  background: rgb(83, 83, 255);
+}

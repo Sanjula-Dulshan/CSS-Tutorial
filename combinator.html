@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selectors</title>
+    <style>
+      /* Decendent Combinator */
+      div li {
+        color: red;
+      }
+
+      /* Child Combinator */
+      div > p {
+        color: blue;
+      }
+
+      /* Adjacent Sibling Combinator */
+      h3 + p {
+        color: green;
+      }
+
+      /* General Sibling Combinator */
+      h2 ~ p {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Decendent Combinator-->
+    <div>
+      <ui>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+      </ui>
+    </div>
+    <br />
+    <hr />
+    <!-- Child Combinator-->
+    <div>
+      <p>Paragraph content.........</p>
+      <article>
+        <p>Paragraph content.........</p>
+      </article>
+    </div>
+    <br />
+    <hr />
+
+    <!-- Adjacent Sibling Combinator-->
+    <h3>Example elements</h3>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+
+    <h3>More Example</h3>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+    <br />
+    <hr />
+
+    <!-- General Sibling Combinator-->
+    <h1>Example elements</h1>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+
+    <h2>More Example</h2>
+    <p>Stuff inside my paragraph........</p>
+    <p>Stuff inside my paragraph........</p>
+    <div>Stuff inside my div........</div>
+    <p>Stuff inside my paragraph........</p>
+    <div>Stuff inside my div........</div>
+
+    <br />
+    <hr />
+  </body>
+</html>

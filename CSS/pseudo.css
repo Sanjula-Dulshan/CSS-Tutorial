@@ -1,0 +1,100 @@
+/* Pseudo Classes */
+.link {
+  font-size: 25px;
+  background-color: #ffffff;
+}
+.link:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.link:active {
+  background-color: #ed0000;
+  color: #ffffff;
+}
+.link:visited {
+  background-color: magenta;
+  color: #ffffff;
+}
+
+.ch1 p:first-child {
+  color: red;
+}
+
+.ch1 p:last-child {
+  color: blue;
+}
+
+.ch1 p:nth-child(5) {
+  color: green;
+}
+
+.ch1 p:nth-child(odd) {
+  color: yellow;
+}
+
+input[type="text"]:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+input[type="email"]:disabled {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+input[type="email"]:invalid {
+  background-color: #ffffff;
+  color: #ff0000;
+}
+
+input[type="checkbox"]:checked + p {
+  color: green;
+}
+
+/* Pseudo Elements */
+.req::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  display: block;
+  background-color: purple;
+}
+
+.req::after {
+  content: "";
+  height: 2px;
+  width: 150px;
+  display: block;
+  background-color: rgb(0, 255, 60);
+}
+
+.frm button {
+  position: relative;
+}
+
+.frm button:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.para::first-letter {
+  font-size: xx-large;
+  color: red;
+}
+
+.para::first-line {
+  color: blue;
+  font-variant: small-caps;
+}
+
+h1::selection {
+  color: red;
+  background-color: yellow;
+}
