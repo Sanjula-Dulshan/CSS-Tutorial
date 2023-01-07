@@ -1,0 +1,79 @@
+/* Basic styles */
+
+body {
+  background-color: #333;
+}
+
+.box {
+  position: relative;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  animation-name: sampleAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  /*! animation-delay: 5s; */
+  /*! animation-direction: alternate; */
+  /*animation-timing-function: ease-in-out;*/ /*? linear: start speed = end speed(Default)/  ease-in: start speed<end speed/ ease-out: start speed>end speed  */
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes with movements */
+
+/* @keyframes sampleAnimation {
+  0% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 10%;
+  }
+  25% {
+    background-color: coral;
+    left: 0px;
+    top: 250px;
+    border-radius: 20%;
+  }
+  50% {
+    background-color: crimson;
+    left: 250px;
+    top: 250px;
+    border-radius: 30%;
+  }
+  75% {
+    background-color: darkorchid;
+    left: 250px;
+    top: 0px;
+    border-radius: 40%;
+  }
+  100% {
+    background-color: white;
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+  }
+} */
+
+/* Keyframes without movements */
+
+@keyframes sampleAnimation {
+  0% {
+    background-color: white;
+    border-radius: 10%;
+  }
+  25% {
+    background-color: coral;
+    border-radius: 20%;
+  }
+  50% {
+    background-color: crimson;
+    border-radius: 30%;
+  }
+  75% {
+    background-color: darkorchid;
+    border-radius: 40%;
+  }
+  100% {
+    background-color: white;
+    border-radius: 50%;
+  }
+}
